@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en-IE">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Homes — Arden, Dublin 18</title>
+  <meta name="description" content="Apartments, duplexes and townhouses at Arden, Dublin 18. Filter homes, view floor plans and specification.">
+  <meta name="theme-color" content="#F4F1EA">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..400;1,9..144,300..400&family=Geist:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=10">
+</head>
+<body data-page="homes">
+  <main id="main">
+    <section class="phero" id="top" aria-labelledby="page-title">
+      <div class="phero__media" aria-hidden="true"><img src="assets/img/1600121848594-d8644e57abab.jpg" alt="" fetchpriority="high"></div>
+      <div class="wrap phero__grid">
+        <div>
+          <nav class="crumbs reveal-load" style="--d:0" aria-label="Breadcrumb"><a href="index.html">Arden</a><span aria-hidden="true">/</span><span aria-current="page">Homes</span></nav>
+          <h1 id="page-title" class="reveal-load" style="--d:1">Find your <em>home.</em></h1>
+        </div>
+        <div class="phero__side reveal-load" style="--d:2">
+          <p class="phero__lede">One and two-bed apartments, own-door duplexes and townhouses with gardens. Every home is A1-rated.</p>
+          <dl class="phero__stats"><div><dt>Homes</dt><dd>142</dd></div><div><dt>Bedrooms</dt><dd>1–4</dd></div><div><dt>From</dt><dd>€385k</dd></div></dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="homes" id="homes" aria-labelledby="homes-title">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="eyebrow"><span class="idx">01</span> Choose a home</p>
+          <h2 id="homes-title" class="h2 reveal">Eight ways to live at Arden.</h2>
+          <p class="sec-head__aside reveal">Filter by type or bedrooms, then open a home to see its floor plan, specification and availability.</p>
+        </div>
+
+        <div class="filters" role="group" aria-label="Filter homes">
+          <div class="seg" role="radiogroup" aria-label="Home type" data-filter="type">
+            <button role="radio" aria-checked="true" data-value="all">All</button>
+            <button role="radio" aria-checked="false" data-value="apartment">Apartments</button>
+            <button role="radio" aria-checked="false" data-value="duplex">Duplexes</button>
+            <button role="radio" aria-checked="false" data-value="townhouse">Townhouses</button>
+          </div>
+          <div class="chips" role="radiogroup" aria-label="Bedrooms" data-filter="beds">
+            <span class="chips__label">Beds</span>
+            <button role="radio" aria-checked="true" data-value="any">Any</button>
+            <button role="radio" aria-checked="false" data-value="1">1</button>
+            <button role="radio" aria-checked="false" data-value="2">2</button>
+            <button role="radio" aria-checked="false" data-value="3">3</button>
+            <button role="radio" aria-checked="false" data-value="4">4</button>
+          </div>
+          <p class="filters__count" aria-live="polite" data-count-label>Showing 8 homes</p>
+        </div>
+
+        <ul class="grid-homes" data-homes></ul>
+        <p class="empty" hidden data-empty>No homes match that combination yet. <button class="text-btn" data-reset>Clear filters</button></p>
+      </div>
+    </section>
+
+    <section class="spec" id="specification" aria-labelledby="spec-title">
+      <div class="wrap spec__grid">
+        <div class="spec__media" aria-hidden="true" data-spec-media></div>
+        <div class="spec__content">
+          <p class="eyebrow eyebrow--light"><span class="idx">02</span> Specification</p>
+          <h2 id="spec-title" class="h2 h2--light reveal">Built quietly well.</h2>
+          <p class="spec__lede reveal">The details you won't notice on a viewing, but will every day after.</p>
+          <ol class="spec__list" data-spec></ol>
+        </div>
+      </div>
+    </section>
+
+    <nav class="next" aria-label="Next page">
+      <div class="wrap"><a href="location.html"><span><span class="eyebrow">Next</span><span class="next__t">Location</span></span><svg class="arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a></div>
+    </nav>
+
+    <div data-slot="register"></div>
+  </main>
+
+  <script src="main.js?v=10"></script>
+</body>
+</html>

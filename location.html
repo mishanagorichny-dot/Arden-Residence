@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en-IE">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Location — Arden, Dublin 18</title>
+  <meta name="description" content="Arden sits between the Dublin Mountains and the M50 in Dublin 18, four minutes from the Luas.">
+  <meta name="theme-color" content="#F4F1EA">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..400;1,9..144,300..400&family=Geist:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=10">
+</head>
+<body data-page="location">
+  <main id="main">
+    <section class="phero" id="top" aria-labelledby="page-title">
+      <div class="phero__media" aria-hidden="true"><img src="assets/img/1470071459604-3b5ec3a7fe05.jpg" alt="" fetchpriority="high"></div>
+      <div class="wrap phero__grid">
+        <div>
+          <nav class="crumbs reveal-load" style="--d:0" aria-label="Breadcrumb"><a href="index.html">Arden</a><span aria-hidden="true">/</span><span aria-current="page">Location</span></nav>
+          <h1 id="page-title" class="reveal-load" style="--d:1">Dublin 18, <em>closer than you think.</em></h1>
+        </div>
+        <div class="phero__side reveal-load" style="--d:2">
+          <p class="phero__lede">Between the Dublin Mountains and the M50. The Luas takes you into town, and the woods stay on your doorstep.</p>
+          <dl class="phero__stats"><div><dt>Luas</dt><dd>4 min</dd></div><div><dt>M50</dt><dd>3 min</dd></div><div><dt>City</dt><dd>32 min</dd></div></dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="location" id="map" aria-labelledby="loc-title">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="eyebrow"><span class="idx">01</span> On the map</p>
+          <h2 id="loc-title" class="h2 reveal">Everything, <em>a short trip away.</em></h2>
+          <p class="sec-head__aside reveal">Choose a category, then hover a place to find it on the map.</p>
+        </div>
+
+        <div class="loc">
+          <div class="loc__map reveal">
+            <svg viewBox="0 0 600 520" role="img" aria-labelledby="map-t map-d">
+              <title id="map-t">Stylised map of Dublin 18</title>
+              <desc id="map-d">Arden sits at the centre, with the Luas Green Line to the west, the M50 to the north and the Dublin Mountains to the south.</desc>
+              <defs><pattern id="hatch" width="8" height="8" patternUnits="userSpaceOnUse" patternTransform="rotate(35)"><line x1="0" y1="0" x2="0" y2="8" class="map-hatch"/></pattern></defs>
+              <rect width="600" height="520" class="map-bg"/>
+              <path d="M0 420 C120 380 210 440 320 410 S520 430 600 400 L600 520 L0 520Z" fill="url(#hatch)"/>
+              <path d="M540 0 C520 120 560 220 530 330 S560 460 600 520 L600 0Z" class="map-sea"/>
+              <path d="M-10 120 C120 90 240 150 330 110 S520 60 610 90" class="map-road map-road--m"/>
+              <path d="M180 -10 C200 90 230 170 250 250 S300 400 330 530" class="map-luas"/>
+              <path d="M40 300 C160 280 260 300 380 270 S520 250 560 230" class="map-road"/>
+              <circle cx="300" cy="250" r="80" class="map-ring"/>
+              <circle cx="300" cy="250" r="160" class="map-ring"/>
+              <circle cx="300" cy="250" r="240" class="map-ring"/>
+              <text x="300" y="164" class="map-ring-l">5 min</text>
+              <text x="300" y="84" class="map-ring-l">10 min</text>
+              <text x="30" y="112" class="map-label">M50</text>
+              <text x="40" y="470" class="map-label">Dublin Mountains</text>
+              <text x="552" y="300" class="map-label map-label--v">Killiney Bay</text>
+              <g data-pins></g>
+              <g class="map-home" transform="translate(300 250)"><circle r="22" class="map-home__pulse"/><circle r="9" class="map-home__dot"/><text y="-18" class="map-home__l">ARDEN</text></g>
+            </svg>
+            <p class="loc__note">Illustrative map, not to scale. Journey times are approximate, off-peak.</p>
+          </div>
+          <div class="loc__panel">
+            <div class="tabs" role="tablist" aria-label="Places nearby" data-loc-tabs></div>
+            <ul class="places" data-places aria-live="polite"></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ways" aria-labelledby="ways-title">
+      <div class="wrap">
+        <div class="sec-head">
+          <p class="eyebrow"><span class="idx">02</span> Into town</p>
+          <h2 id="ways-title" class="h2 reveal">Three ways to St Stephen's Green.</h2>
+        </div>
+        <div class="ways__grid">
+          <article class="way reveal">
+            <svg class="way__icon" viewBox="0 0 36 36" aria-hidden="true"><rect x="9" y="4" width="18" height="22" rx="4"/><path d="M9 16h18M13 30l-3 4M23 30l3 4M13 21h.01M23 21h.01"/></svg>
+            <p class="way__t">32<small>min</small></p>
+            <h3 class="h3">Luas Green Line</h3>
+            <p>Four minutes' walk to Ballyogan Wood, then direct to the city centre. Trams every 5 to 10 minutes at peak.</p>
+          </article>
+          <article class="way reveal">
+            <svg class="way__icon" viewBox="0 0 36 36" aria-hidden="true"><circle cx="9" cy="24" r="6"/><circle cx="27" cy="24" r="6"/><path d="M9 24l6-11h8l4 11M15 13l-2-4h-3M21 9h4"/></svg>
+            <p class="way__t">35<small>min</small></p>
+            <h3 class="h3">Bike</h3>
+            <p>Secure storage for every home, plus a repair stand. Mostly downhill into town, mostly uphill home.</p>
+          </article>
+          <article class="way reveal">
+            <svg class="way__icon" viewBox="0 0 36 36" aria-hidden="true"><path d="M5 22l3-9a3 3 0 0 1 3-2h14a3 3 0 0 1 3 2l3 9v6H5z"/><circle cx="11" cy="28" r="2.5"/><circle cx="25" cy="28" r="2.5"/><path d="M5 22h26"/></svg>
+            <p class="way__t">25<small>min</small></p>
+            <h3 class="h3">Car, off-peak</h3>
+            <p>M50 Junction 15 is three minutes away. Every townhouse and most apartments come with EV-ready parking.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <nav class="next" aria-label="Next page">
+      <div class="wrap"><a href="living.html"><span><span class="eyebrow">Next</span><span class="next__t">Living</span></span><svg class="arrow" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 8h11M9 4l4 4-4 4"/></svg></a></div>
+    </nav>
+
+    <div data-slot="register"></div>
+  </main>
+
+  <script src="main.js?v=10"></script>
+</body>
+</html>
