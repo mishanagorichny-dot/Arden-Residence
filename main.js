@@ -10,31 +10,25 @@
 
   /* ================= data ================= */
   const HOMES = [
-    { id: 'alder',  name: 'The Alder',  type: 'apartment', label: '1 bed apartment',          beds: 1, baths: 1, size: 52,  aspect: 'South-west',  price: 385000, left: 6, img: '1493809842364-78817add7ffb', plan: 1,
+    { id: 'alder',  name: 'The Alder',  type: 'apartment', label: '1 bed apartment',          beds: 1, baths: 1, size: 52,  aspect: 'South-west',  price: 385000, left: 6, img: 'arden-alder-exterior', plan: 1,
       feats: ['Recessed balcony, 6 m²', 'Floor-to-ceiling glazing', 'Utility store off hall', 'Bike space in secure store'] },
     { id: 'birch',  name: 'The Birch',  type: 'apartment', label: '2 bed apartment',          beds: 2, baths: 2, size: 78,  aspect: 'South',       price: 475000, left: 9, img: 'arden-birch', plan: 2,
       feats: ['Corner balcony, 9 m²', 'En-suite to main bedroom', 'Dual aspect living room', 'Designated parking option'] },
-    { id: 'hazel',  name: 'The Hazel',  type: 'apartment', label: '2 bed + study apartment',  beds: 2, baths: 2, size: 88,  aspect: 'East & west', price: 525000, left: 3, img: '1502672260266-1c1ef2d93688', plan: 2,
+    { id: 'hazel',  name: 'The Hazel',  type: 'apartment', label: '2 bed + study apartment',  beds: 2, baths: 2, size: 88,  aspect: 'East & west', price: 525000, left: 3, img: 'arden-hazel-exterior', plan: 2,
       feats: ['Separate study with window', 'Walk-in wardrobe', 'Balcony over the woodland', 'Triple aspect'] },
-    { id: 'rowan',  name: 'The Rowan',  type: 'apartment', label: '3 bed penthouse',          beds: 3, baths: 2, size: 118, aspect: 'South & west', price: 795000, left: 1, img: '1618221195710-dd6b41faaea6', plan: 3,
-      feats: ['Private roof terrace, 24 m²', 'Views to the Dublin Mountains', 'Two parking spaces', 'Top-floor ceiling height 2.9 m'] },
     { id: 'willow', name: 'The Willow', type: 'duplex',    label: '2 bed own-door duplex',    beds: 2, baths: 2, size: 96,  aspect: 'South',       price: 545000, left: 4, img: 'arden-willow', plan: 2,
       feats: ['Own front door', 'Upper-floor terrace', 'Guest WC at entry level', 'Storage under stairs'] },
-    { id: 'larch',  name: 'The Larch',  type: 'duplex',    label: '3 bed own-door duplex',    beds: 3, baths: 3, size: 112, aspect: 'South-east',  price: 615000, left: 2, img: '1600607687939-ce8a6c25118c', plan: 3,
-      feats: ['Own front door', 'Two en-suites', 'Open-plan kitchen & living', 'Terrace facing the courtyard'] },
     { id: 'oak',    name: 'The Oak',    type: 'townhouse', label: '3 bed townhouse',          beds: 3, baths: 3, size: 126, aspect: 'West garden', price: 695000, left: 5, img: 'arden-oak', plan: 3,
       feats: ['Private rear garden, 60 m²', 'EV charger on driveway', 'Kitchen opening to garden', 'Attic storage'] },
-    { id: 'ash',    name: 'The Ash',    type: 'townhouse', label: '4 bed townhouse',          beds: 4, baths: 3, size: 158, aspect: 'South garden', price: 845000, left: 0, img: '1600566753190-17f0baa2a6c3', plan: 4,
-      feats: ['Private rear garden, 80 m²', 'Home office on 2nd floor', 'Two parking spaces', 'Released in Phase Two'] },
   ];
   const TYPE_LABEL = { apartment: 'Apartments', duplex: 'Duplexes', townhouse: 'Townhouses' };
 
   const SPEC = [
-    { t: 'Kitchens', img: '1484154218962-a197022b5858', d: 'Handleless kitchens in matt oak and chalk, with quartz worktops and integrated Bosch appliances.', tags: ['Quartz worktops', 'Integrated appliances', 'Soft-close drawers', 'Under-cabinet lighting'] },
-    { t: 'Living spaces', img: '1524758631624-e2822e304c36', d: 'Engineered oak floors throughout, 2.7 m ceilings and deep window reveals sized for a reading seat.', tags: ['Engineered oak', '2.7 m ceilings', 'Triple glazing', 'Dimmable lighting'] },
-    { t: 'Bedrooms', img: '1616594039964-ae9021a400a0', d: 'Fitted wardrobes with full-height doors, wool-blend carpet and blackout-ready window heads.', tags: ['Fitted wardrobes', 'Wool-blend carpet', 'USB-C sockets'] },
-    { t: 'Bathrooms', img: '1552321554-5fefe8c9ef14', d: 'Large-format porcelain tiles, wall-hung sanitaryware and heated towel rails in brushed brass.', tags: ['Porcelain tiling', 'Rain shower', 'Heated towel rail'] },
-    { t: 'Energy & comfort', img: '1600563438938-a9a27216b4f5', d: 'Air-to-water heat pumps, underfloor heating and mechanical ventilation with heat recovery. Every home is rated A1.', tags: ['A1 BER', 'Heat pump', 'Underfloor heating', 'MVHR', 'Fibre broadband'] },
+    { t: 'Kitchens', img: 'arden-spec-kitchen', d: 'Handleless kitchens in matt oak and chalk, with quartz worktops and integrated Bosch appliances.', tags: ['Quartz worktops', 'Integrated appliances', 'Soft-close drawers', 'Under-cabinet lighting'] },
+    { t: 'Living spaces', img: 'arden-spec-living', d: 'Engineered oak floors throughout, 2.7 m ceilings and deep window reveals sized for a reading seat.', tags: ['Engineered oak', '2.7 m ceilings', 'Triple glazing', 'Dimmable lighting'] },
+    { t: 'Bedrooms', img: 'arden-spec-bedroom', d: 'Fitted wardrobes with full-height doors, wool-blend carpet and blackout-ready window heads.', tags: ['Fitted wardrobes', 'Wool-blend carpet', 'USB-C sockets'] },
+    { t: 'Bathrooms', img: 'arden-spec-bathroom', d: 'Large-format porcelain tiles, wall-hung sanitaryware and heated towel rails in brushed brass.', tags: ['Porcelain tiling', 'Rain shower', 'Heated towel rail'] },
+    { t: 'Energy & comfort', img: 'arden-spec-energy', d: 'Air-to-water heat pumps, underfloor heating and mechanical ventilation with heat recovery. Every home is rated A1.', tags: ['A1 BER', 'Heat pump', 'Underfloor heating', 'MVHR', 'Fibre broadband'] },
   ];
 
   const PLACES = {
@@ -71,7 +65,7 @@
     { t: 'Residents\' allotments', img: 'arden-allotments', d: 'Twenty raised beds with a potting shed and water points. Book a season through the resident app.' },
     { t: 'Fitness studio',         img: '1571902943202-507ec2618e8f', d: 'Open 6am to 11pm, facing the canopy, with free weekly classes in the first year.' },
     { t: 'Work suite',             img: '1497366216548-37526070297c', d: 'Bookable desks, two call booths and a meeting room, so remote work doesn\'t have to mean the kitchen table.' },
-    { t: 'Residents\' lounge',     img: '1505691938895-1758d7feb511', d: 'A shared living room with a kitchen for bigger dinners, a parcel room and a concierge desk.' },
+    { t: 'Residents\' lounge',     img: 'arden-lounge', d: 'A shared living room with a kitchen for bigger dinners, a parcel room and a concierge desk.' },
   ];
 
   /* ================= shared chrome ================= */
